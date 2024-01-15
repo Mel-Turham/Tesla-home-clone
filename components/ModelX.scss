@@ -1,0 +1,45 @@
+@import '../src/scss/mixins';
+@import '../src/scss/varibles';
+
+.modelX {
+	@include centerBackground;
+	background-image: url(../src/assets/img/Homepage-Model-X-Desktop-LHD-min.jpeg);
+
+	.section-top {
+		@include section-top;
+
+		.title {
+			@include title;
+		}
+
+		.text {
+			@include text;
+			color: $black-color;
+			font-size: 1.2rem;
+			font-weight: 500;
+			span {
+				font-size: 0.8rem;
+				font-weight: 300;
+			}
+		}
+	}
+
+	.section-bottom {
+		@include section-bottom;
+
+		.buttons {
+			@include buttons-container;
+
+			.btn-primary {
+				@include button-primary;
+			}
+			.btn-secondary {
+				@include button-secondary;
+			}
+
+		}
+    p {
+      color: $white-color;
+    }
+	}
+}

@@ -1,0 +1,73 @@
+@import './../src/scss/mixins';
+
+
+.section-hero {
+	position: relative;
+
+	video{
+		@include Video;
+	}
+
+	.section-top {
+		position: absolute;
+		top: 6.5rem;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 12;
+		text-align: center;
+		color: #fff;
+
+		.title {
+			font-size: 2.5rem;
+			font-weight: 400;
+		}
+
+		.text {
+			font-size: 1.5rem;
+			font-weight: 300;
+		}
+	}
+
+	.section-bottom {
+		position: absolute;
+		width: 100%;
+		bottom: 1.25rem;
+		left: 50%;
+		transform: translateX(-50%);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 1.2rem;
+
+		.buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 1.3rem;
+
+			.btn-primary {
+				background: rgba(255, 255, 255, 0.8);
+				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+				backdrop-filter: blur(5px);
+				-webkit-backdrop-filter: blur(5px);
+				border: 1px solid rgba(255, 255, 255, 0.02);
+			}
+
+			.btn-secondary {
+				background: rgba(28, 28, 28, 0.8);
+				box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+				backdrop-filter: blur(2px);
+				-webkit-backdrop-filter: blur(2px);
+				border: 1px solid rgba(28, 28, 28, 0.02);
+        color: #fff;
+			}
+		}
+
+    p{
+      color: #fff;
+      font-weight: 200;
+    }
+	}
+}

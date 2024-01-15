@@ -1,0 +1,40 @@
+@import'../src/scss/mixins';
+
+.section-Model3{
+  background-image: url(../../src/assets/img/Homepage-Model-3-Desktop-NA-min.jpg);
+  background-position: center;
+  background-size: cover;
+
+  .section-top{
+    @include section-top;
+
+    .title{
+      @include title;
+      color: #fff;
+    }
+
+    .text{
+    @include text;
+    }
+  }
+
+  .section-bottom{
+    @include  section-bottom;
+
+    .buttons{
+      @include buttons-container;
+
+      .btn-primary{
+        @include button-primary;
+      }
+
+      .btn-secondary{
+        @include button-secondary;  
+      }
+    }
+
+    p{
+      color: #fff;
+    }
+  }
+}

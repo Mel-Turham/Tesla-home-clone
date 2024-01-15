@@ -1,0 +1,36 @@
+@import '../src/scss/mixins';
+
+
+.ModelS{
+  @include centerBackground;
+  background-image: url(../src/assets/img/Homepage-Model-S-Desktop-LHD-6.22-min.jpg);
+
+  .section-top{
+    @include section-top;
+    .title{
+      @include title;
+    }
+
+    .text{
+      @include text;
+      color: #393c41;
+    }
+  }
+
+  .section-bottom{
+    @include section-bottom;
+
+    .buttons{
+      @include buttons-container;
+
+      .btn-primary{
+        @include button-primary;
+
+      }
+
+      .btn-secondary{
+        @include button-secondary;
+      }
+    }
+  }
+}

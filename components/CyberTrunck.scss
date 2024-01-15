@@ -1,0 +1,22 @@
+@import '../src/scss/mixins';
+
+.CyberTruck{
+  @include centerBackground;
+  background-image: url(../src/assets/img/Homepage-Cybertruck.jpg);
+
+  .section-bottom{
+    @include section-bottom;
+
+    .buttons{
+      @include buttons-container;
+
+      .btn-primary{
+        @include button-primary;
+      }
+
+      .btn-secondary{
+        @include button-secondary;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@import '../src/scss/mixins';
+
+.PowerWall{
+ @include centerBackground;
+
+ background-image: url(../src/assets/img/Homepage-Powerwall-Desktop-min.jpg);
+
+ .section-top{
+  @include section-top;
+
+  .title{
+    @include title;
+    color: #000;
+  }
+
+  .text{
+    @include text;
+    color: #000;
+  }
+}
+
+.section-bottom{
+  @include section-bottom;
+
+  .buttons{
+    @include buttons-container;
+
+    .btn-primary{
+      @include button-primary;
+    }
+
+    .btn-secondary{
+      @include button-secondary;
+    }
+  }
+}
+}

@@ -1,0 +1,38 @@
+@import '../src/scss/mixins';
+
+.Experience{
+
+  video{
+    @include Video;
+  }
+
+  .section-top{
+    @include section-top;
+    top: 150px;
+
+    .title{
+      @include title;
+
+      color: #f1f1f1;
+    }
+    .text{
+      @include text;
+      color: #f1f1f1;
+    }
+  }
+
+  .section-bottom{
+    @include section-bottom;
+
+    .buttons{
+      @include buttons-container;
+
+      .btn-primary{
+        background: none;
+
+        color: #fff;
+        border: 2px solid #fff;
+      }
+    }
+  }
+}

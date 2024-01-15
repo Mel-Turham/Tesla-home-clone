@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+button{
+  border: none;
+  outline: none;
+  width: 20rem;
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  display: flex;justify-content: center;
+  align-items: center;
+  font-size: 17.4px;
+  border-radius: 4px;
+  font-weight: 500;
+}

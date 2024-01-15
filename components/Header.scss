@@ -1,0 +1,130 @@
+@import '../src/scss/varibles';
+
+.headers {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.header-top {
+	background: linear-gradient(160deg, $gradient-dackBlue 10%, $black-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+
+	padding:1rem;
+
+	color: #fff;
+
+	.header-top-left {
+		span {
+			font-weight: 500;
+		}
+	}
+
+	.header-center-top {
+		font-weight: 300;
+	}
+
+	.header-right-top {
+		a {
+			color: #fff;
+			border-bottom: 1px solid #fff;
+		}
+	}
+}
+
+.header-sub {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1rem;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+	background: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(3px);
+
+	.logo-tesla {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+
+		.span__icon {	
+			display: grid;
+			place-items: center;
+			cursor: pointer;
+
+			svg {
+				width: 8rem;
+				height: auto;
+				color: #fff;
+				opacity: 0;
+				transition: opacity 1s ease;
+				animation: opacityLogo 400ms linear 300ms forwards;
+			}
+
+			@keyframes opacityLogo {
+				from{
+					opacity: 0;
+				}
+
+				to{
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	.menu {
+		&__lists {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+
+			.lists__item {
+				display: inline-block;
+				padding: .5rem;
+
+				a {
+					display: block;
+					color: #fff;
+					position: relative;
+					transition: all 200ms linear;
+
+					&::after{
+						content: '';
+						position: absolute;
+						width: 100%;
+						height: 3px;
+						bottom: -5px;
+						left: 0;
+						background: #fff;
+						border-radius: 10px;
+
+						transform: scale(0);
+						transform-origin: top;
+						transition: all 300ms ease;
+					}
+
+					&:hover::after{
+						transform: scale(1);
+						transform-origin: bottom;
+					}
+				}
+			}
+		}
+	}
+
+	.header-sub-right {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+}

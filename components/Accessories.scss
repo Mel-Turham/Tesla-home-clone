@@ -1,0 +1,56 @@
+@import '../src/scss/mixins';
+
+.Accessories {
+	@include centerBackground;
+
+	background-image: url(../src/assets/img/Homepage-Accessories-Desktop-NA-APAC-min.jpg);
+
+	.section-top {
+		@include section-top;
+
+		.title {
+			@include title;
+			color: #000;
+		}
+
+		.text {
+			@include text;
+			color: #000;
+		}
+	}
+
+	.section-bottom {
+		@include section-bottom;
+     bottom: 10px;
+
+		.buttons {
+			@include buttons-container;
+
+			.btn-primary {
+				@include button-primary;
+			}
+
+			.btn-secondary {
+				@include button-secondary;
+			}
+		}
+
+    .footer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      gap:.3rem;
+
+      font-size: 14px;
+
+
+      .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .6rem;
+      }
+    }
+	}
+}
