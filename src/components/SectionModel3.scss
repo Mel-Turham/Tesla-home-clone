@@ -1,40 +1,56 @@
-@import'../src/scss/mixins';
+@import '../src/scss/mixins';
 
-.section-Model3{
-  background-image: url(../../src/assets/img/Homepage-Model-3-Desktop-NA-min.jpg);
-  background-position: center;
-  background-size: cover;
+.section-Model3 {
+	background-image: url(../../src/assets/img/Homepage-Model-3-Desktop-NA-min.jpg);
+	background-position: center;
+	background-size: cover;
 
-  .section-top{
-    @include section-top;
+	.section-top {
+		@include section-top;
 
-    .title{
-      @include title;
-      color: #fff;
-    }
+		.title {
+			@include title;
+			color: #fff;
+		}
 
-    .text{
-    @include text;
-    }
-  }
+		.text {
+			@include text;
+		}
+	}
 
-  .section-bottom{
-    @include  section-bottom;
+	.section-bottom {
+		@include section-bottom;
 
-    .buttons{
-      @include buttons-container;
+		.buttons {
+			@include buttons-container;
 
-      .btn-primary{
-        @include button-primary;
-      }
+			.btn-primary {
+				@include button-primary;
+			}
 
-      .btn-secondary{
-        @include button-secondary;  
-      }
-    }
+			.btn-secondary {
+				@include button-secondary;
+			}
+		}
 
-    p{
-      color: #fff;
+		p {
+			color: #fff;
+		}
+	}
+}
+
+@media (max-width: 667px) {
+	.section-Model3{
+    background-size: 210% 120%;
+    .section-top {
+			.title {
+				font-size: 3rem;
+        text-wrap: nowrap;
+			}
+		}
+    .section-bottom {
+      @include section-bottom;
+      bottom: 1rem;
     }
   }
 }

@@ -15,7 +15,7 @@
 	justify-content: center;
 	gap: 1rem;
 
-	padding:1rem;
+	padding: 1rem;
 
 	color: #fff;
 
@@ -53,8 +53,7 @@
 		justify-content: center;
 		align-items: center;
 
-
-		.span__icon {	
+		.span__icon {
 			display: grid;
 			place-items: center;
 			cursor: pointer;
@@ -69,11 +68,11 @@
 			}
 
 			@keyframes opacityLogo {
-				from{
+				from {
 					opacity: 0;
 				}
 
-				to{
+				to {
 					opacity: 1;
 				}
 			}
@@ -89,7 +88,7 @@
 
 			.lists__item {
 				display: inline-block;
-				padding: .5rem;
+				padding: 0.5rem;
 
 				a {
 					display: block;
@@ -97,7 +96,7 @@
 					position: relative;
 					transition: all 200ms linear;
 
-					&::after{
+					&::after {
 						content: '';
 						position: absolute;
 						width: 100%;
@@ -112,7 +111,7 @@
 						transition: all 300ms ease;
 					}
 
-					&:hover::after{
+					&:hover::after {
 						transform: scale(1);
 						transform-origin: bottom;
 					}
@@ -126,5 +125,11 @@
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
+	}
+}
+
+@media (max-width: 667px) {
+	.headers {
+		display: none;
 	}
 }

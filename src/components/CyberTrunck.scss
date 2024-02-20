@@ -1,22 +1,28 @@
 @import '../src/scss/mixins';
 
-.CyberTruck{
-  @include centerBackground;
-  background-image: url(../src/assets/img/Homepage-Cybertruck.jpg);
+.CyberTruck {
+	@include centerBackground;
+	background-image: url(../src/assets/img/Homepage-Cybertruck.jpg);
 
-  .section-bottom{
-    @include section-bottom;
+	.section-bottom {
+		@include section-bottom;
 
-    .buttons{
-      @include buttons-container;
+		.buttons {
+			@include buttons-container;
 
-      .btn-primary{
-        @include button-primary;
-      }
+			.btn-primary {
+				@include button-primary;
+			}
 
-      .btn-secondary{
-        @include button-secondary;
-      }
-    }
-  }
+			.btn-secondary {
+				@include button-secondary;
+			}
+		}
+	}
+}
+
+@media (max-width: 667px) {
+	.CyberTruck {
+		background-size: 210% 120%;
+	}
 }

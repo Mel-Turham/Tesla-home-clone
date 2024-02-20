@@ -11,20 +11,19 @@ import SolarRoof from './components/SolarRoof';
 import PowerWall from './components/PowerWall';
 import Accessories from './components/Accessories';
 
-
 const App = () => {
 	return (
 		<>
 			<Header />
-			<Hero/>
-			<SectionModel3/>
-			<ModelX/>
-			<ModelS/>
-			<CyberTrunck/>
-			<Experience/>
-			<SolarPanel/>
-			<SolarRoof/>
-			<PowerWall/>
+			<Hero />
+			<SectionModel3 />
+			<ModelX />
+			<ModelS />
+			<CyberTrunck />
+			<Experience />
+			<SolarPanel />
+			<SolarRoof />
+			<PowerWall />
 			<Accessories />
 		</>
 	);

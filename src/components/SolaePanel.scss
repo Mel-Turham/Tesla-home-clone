@@ -37,3 +37,18 @@
     }
   }
 }
+
+@media (max-width: 667px) {
+	.SolarPanel {
+    .section-top {
+			.title {
+				font-size: 3rem;
+        text-wrap: nowrap;
+			}
+		}
+		.section-bottom {
+			@include section-bottom;
+			bottom: 1rem;
+		}
+	}
+}

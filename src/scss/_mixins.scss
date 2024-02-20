@@ -11,6 +11,7 @@
 @mixin title {
 	font-size: 2.5rem;
 	font-weight: 500;
+	width: 100%;
 	color: #393c41;
 	transition: all 1s ease-in-out;
 	animation: opacityScroll 5s ease 3s both;
@@ -55,7 +56,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1.3rem;
+	column-gap: 1.3rem;
+	row-gap: 0.5rem;
+	flex-wrap: wrap;
 }
 
 @mixin section-bottom {
@@ -78,13 +81,12 @@
 	background-repeat: no-repeat;
 }
 
-
-@mixin Video{
-		top: 0;
-		left: 0;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		object-position: center;
-	}
+@mixin Video {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}

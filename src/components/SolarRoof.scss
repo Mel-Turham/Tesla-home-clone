@@ -1,38 +1,53 @@
 @import '../src/scss//mixins';
 
-.SolarRoof{
-  @include centerBackground;
+.SolarRoof {
+	@include centerBackground;
 
-  background-image: url('../src/assets/img/Homepage-SolarRoof-Desktop-Global.jpeg');
+	background-image: url('../src/assets/img/Homepage-SolarRoof-Desktop-Global.jpeg');
 
+	.section-top {
+		@include section-top;
 
-  .section-top{
-    @include section-top;
+		.title {
+			@include title;
+			color: #000;
+		}
 
-    .title{
-      @include title;
-      color: #000;
-    }
+		.text {
+			@include text;
+			color: #000;
+		}
+	}
 
-    .text{
-      @include text;
-      color: #000;
-    }
-  }
+	.section-bottom {
+		@include section-bottom;
 
-  .section-bottom{
-    @include section-bottom;
+		.buttons {
+			@include buttons-container;
 
-    .buttons{
-      @include buttons-container;
+			.btn-primary {
+				@include button-primary;
+			}
 
-      .btn-primary{
-        @include button-primary;
-      }
+			.btn-secondary {
+				@include button-secondary;
+			}
+		}
+	}
+}
 
-      .btn-secondary{
-        @include button-secondary;
-      }
-    }
-  }
+@media (max-width: 667px) {
+	.SolarRoof {
+		background-size: 210% 150%;
+		.section-top {
+			.title {
+				font-size: 3rem;
+				text-wrap: nowrap;
+			}
+		}
+		.section-bottom {
+			@include section-bottom;
+			bottom: 1rem;
+		}
+	}
 }

@@ -21,10 +21,11 @@
 
 	.section-bottom {
 		@include section-bottom;
-     bottom: 10px;
+		bottom: 10px;
 
 		.buttons {
 			@include buttons-container;
+			flex-wrap: wrap;
 
 			.btn-primary {
 				@include button-primary;
@@ -35,22 +36,23 @@
 			}
 		}
 
-    .footer{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      gap:.3rem;
+		.footer {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+			gap: 0.3rem;
+			flex-wrap: wrap;
 
-      font-size: 14px;
+			font-size: 14px;
 
-
-      .nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: .6rem;
-      }
-    }
+			.nav {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 0.6rem;
+				flex-wrap: wrap;
+			}
+		}
 	}
 }

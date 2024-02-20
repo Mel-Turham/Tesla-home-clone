@@ -1,6 +1,8 @@
 import './Accessories.scss';
 
 const Accessories = () => {
+	const date = new Date();
+	const year = date.getFullYear();
 	return (
 		<>
 			<section className='Accessories'>
@@ -15,7 +17,7 @@ const Accessories = () => {
 					</div>
 
 					<footer className='footer'>
-						<p className='CopyRight'>CopyRight &copy; 2024</p>
+						<p className='CopyRight'>CopyRight &copy; {year}</p>
 						<ul className='nav' aria-label='Nav'>
 							<li>Privacy & Legal</li>
 							<li>Vehicle Recalls</li>

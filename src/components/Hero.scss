@@ -1,10 +1,9 @@
 @import './../src/scss/mixins';
 
-
 .section-hero {
 	position: relative;
 
-	video{
+	video {
 		@include Video;
 	}
 
@@ -25,6 +24,7 @@
 		.text {
 			font-size: 1.5rem;
 			font-weight: 300;
+			text-align: center;
 		}
 	}
 
@@ -46,6 +46,7 @@
 			align-items: center;
 			justify-content: center;
 			gap: 1.3rem;
+			flex-wrap: wrap;
 
 			.btn-primary {
 				background: rgba(255, 255, 255, 0.8);
@@ -61,13 +62,27 @@
 				backdrop-filter: blur(2px);
 				-webkit-backdrop-filter: blur(2px);
 				border: 1px solid rgba(28, 28, 28, 0.02);
-        color: #fff;
+				color: #fff;
 			}
 		}
 
-    p{
-      color: #fff;
-      font-weight: 200;
-    }
+		p {
+			color: #fff;
+			font-weight: 200;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.section-top {
+		.title {
+			text-wrap: nowrap;
+			font-size: 3rem;
+		}
+	}
+	.section-bottom {
+		p {
+			text-align: center;
+		}
 	}
 }

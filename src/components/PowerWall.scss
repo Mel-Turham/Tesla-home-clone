@@ -1,37 +1,52 @@
 @import '../src/scss/mixins';
 
-.PowerWall{
- @include centerBackground;
+.PowerWall {
+	@include centerBackground;
 
- background-image: url(../src/assets/img/Homepage-Powerwall-Desktop-min.jpg);
+	background-image: url(../src/assets/img/Homepage-Powerwall-Desktop-min.jpg);
 
- .section-top{
-  @include section-top;
+	.section-top {
+		@include section-top;
 
-  .title{
-    @include title;
-    color: #000;
-  }
+		.title {
+			@include title;
+			color: #000;
+		}
 
-  .text{
-    @include text;
-    color: #000;
-  }
+		.text {
+			@include text;
+			color: #000;
+		}
+	}
+
+	.section-bottom {
+		@include section-bottom;
+
+		.buttons {
+			@include buttons-container;
+
+			.btn-primary {
+				@include button-primary;
+			}
+
+			.btn-secondary {
+				@include button-secondary;
+			}
+		}
+	}
 }
 
-.section-bottom{
-  @include section-bottom;
-
-  .buttons{
-    @include buttons-container;
-
-    .btn-primary{
-      @include button-primary;
-    }
-
-    .btn-secondary{
-      @include button-secondary;
-    }
-  }
-}
+@media (max-width: 667px) {
+	.PowerWall {
+    .section-top {
+			.title {
+				font-size: 3rem;
+        text-wrap: nowrap;
+			}
+		}
+		.section-bottom {
+			@include section-bottom;
+			bottom: 1rem;
+		}
+	}
 }

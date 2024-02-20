@@ -5,14 +5,22 @@ html {
 body {
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
-	font-size: clamp(1.125rem, 2vw, 1rem);
 }
+
+// p, h2{
+// 	font-size: clamp(1rem, 2vw, 1.5rem);
+// }
+
 section {
 	scroll-snap-align: center;
-	height: 100vh;
+	height: 100dvh;
 	position: relative;
 }
 
 ::-webkit-scrollbar {
 	display: none;
+}
+
+p {
+	text-wrap: pretty;
 }

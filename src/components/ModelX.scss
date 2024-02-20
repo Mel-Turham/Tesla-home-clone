@@ -36,10 +36,25 @@
 			.btn-secondary {
 				@include button-secondary;
 			}
-
 		}
-    p {
-      color: $white-color;
-    }
+		p {
+			color: $white-color;
+		}
+	}
+}
+
+@media (max-width: 667px) {
+	.modelX {
+		background-size: 210% 120%;
+		.section-top {
+			.title {
+				text-wrap: nowrap;
+				font-size: 3rem;
+			}
+		}
+		.section-bottom {
+			@include section-bottom;
+			bottom: 1rem;
+		}
 	}
 }
