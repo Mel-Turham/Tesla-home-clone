@@ -3,7 +3,7 @@
 	top: 100px;
 	left: 50%;
 	transform: translateX(-50%);
-	z-index: 12;
+	z-index: 1;
 	text-align: center;
 	color: #fff;
 }
@@ -64,7 +64,7 @@
 @mixin section-bottom {
 	position: absolute;
 	width: 100%;
-	bottom: 4rem;
+	bottom: 1rem;
 	left: 50%;
 	transform: translateX(-50%);
 

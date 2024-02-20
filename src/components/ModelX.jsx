@@ -22,7 +22,6 @@ const ModelX = () => {
 					</p>
 				</div>
 			</section>
-			;
 		</>
 	);
 };
