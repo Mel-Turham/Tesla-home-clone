@@ -1,5 +1,5 @@
 import './Experience.scss';
-import video from '../src/assets/videos/Roadster.mp4';
+import video from '../assets/videos/Roadster.mp4'
 const Experience = () => {
 	return (
 		<>
